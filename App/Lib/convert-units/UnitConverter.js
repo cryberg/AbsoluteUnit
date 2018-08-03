@@ -105,7 +105,12 @@ Converter.prototype.to = function (to) {
   /**
   * Convert to another unit inside the destination system
   */
-  return result / this.destination.unit.to_anchor;
+
+  // This was the original return statement from the convert-units repo
+  // But, I want to round all results to 2 decimal places, instead
+  // return result / this.destination.unit.to_anchor;
+
+  return Math.round( (result / this.destination.unit.to_anchor) * 100) / 100
 };
 
 /**
