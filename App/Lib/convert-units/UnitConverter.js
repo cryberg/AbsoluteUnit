@@ -1,19 +1,18 @@
 import { keys, each } from 'lodash'
 
-
 var convert
   , measures = {
-      length: require('./definitions/length')
-    , area: require('./definitions/area')
-    , mass: require('./definitions/mass')
-    , volume: require('./definitions/volume')
+      area: require('./definitions/area')
     , each: require('./definitions/each')
-    , temperature: require('./definitions/temperature')
-    , time: require('./definitions/time')
-    , speed: require('./definitions/speed')
+    , energy: require('./definitions/energy')
+    , length: require('./definitions/length')
+    , mass: require('./definitions/mass')
     , pace: require('./definitions/pace')
     , pressure: require('./definitions/pressure')
-    , energy: require('./definitions/energy')
+    , speed: require('./definitions/speed')
+    , temperature: require('./definitions/temperature')
+    , time: require('./definitions/time')
+    , volume: require('./definitions/volume')
     }
   , Converter;
 
