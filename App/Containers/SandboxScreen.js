@@ -1,21 +1,18 @@
 import React, { Component } from 'react'
-import { ScrollView, Text, KeyboardAvoidingView, Button } from 'react-native'
+import { ScrollView, Text, KeyboardAvoidingView } from 'react-native'
 import { connect } from 'react-redux'
 // Add Actions - replace 'Your' with whatever your reducer is called :)
 // import YourActions from '../Redux/YourRedux'
 
 // Styles
-import styles from './Styles/MeasurementsScreenStyle'
+import styles from './Styles/SandboxScreenStyle'
 
-class MeasurementsScreen extends Component {
+class SandboxScreen extends Component {
   render () {
     return (
       <ScrollView style={styles.container}>
         <KeyboardAvoidingView behavior='position'>
-          <Text>MeasurementsScreen</Text>
-          <Button 
-            onPress={() => this.props.navigation.navigate('SandboxScreen')}
-            title="Go to Sandbox"/>
+          <Text>SandboxScreen</Text>
         </KeyboardAvoidingView>
       </ScrollView>
     )
@@ -32,4 +29,4 @@ const mapDispatchToProps = (dispatch) => {
   }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(MeasurementsScreen)
+export default connect(mapStateToProps, mapDispatchToProps)(SandboxScreen)
