@@ -1,6 +1,12 @@
 import React, { Component } from 'react'
 import { ScrollView, Text, KeyboardAvoidingView } from 'react-native'
 import { connect } from 'react-redux'
+import PickerSelect from '../Components/PickerSelect'
+import convert from '../Lib/convert-units/UnitConverter'
+
+let lengthPossibilities = convert().possibilities('length');
+let massPossibilities = convert().possibilities('mass');
+
 // Add Actions - replace 'Your' with whatever your reducer is called :)
 // import YourActions from '../Redux/YourRedux'
 
@@ -14,6 +20,9 @@ class SandboxScreen extends Component {
         <KeyboardAvoidingView behavior='position'>
           <Text>SandboxScreen</Text>
         </KeyboardAvoidingView>
+        <PickerSelect pickerOptions={lengthPossibilities}/>
+        <PickerSelect pickerOptions={massPossibilities}/>
+
       </ScrollView>
     )
   }
