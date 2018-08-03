@@ -2,8 +2,6 @@ import { keys, each } from 'lodash'
 
 
 var convert
-  // , keys = require('lodash.keys')
-  // , each = require('lodash.foreach')
   , measures = {
       length: require('./definitions/length')
     , area: require('./definitions/area')
@@ -12,22 +10,10 @@ var convert
     , each: require('./definitions/each')
     , temperature: require('./definitions/temperature')
     , time: require('./definitions/time')
-    , digital: require('./definitions/digital')
-    , partsPer: require('./definitions/partsPer')
     , speed: require('./definitions/speed')
     , pace: require('./definitions/pace')
     , pressure: require('./definitions/pressure')
-    , current: require('./definitions/current')
-    , voltage: require('./definitions/voltage')
-    , power: require('./definitions/power')
-    , reactivePower: require('./definitions/reactivePower')
-    , apparentPower: require('./definitions/apparentPower')
     , energy: require('./definitions/energy')
-    , reactiveEnergy: require('./definitions/reactiveEnergy')
-    , volumeFlowRate: require('./definitions/volumeFlowRate')
-    , illuminance: require('./definitions/illuminance')
-    , frequency: require('./definitions/frequency')
-    , angle : require('./definitions/angle')
     }
   , Converter;
 
